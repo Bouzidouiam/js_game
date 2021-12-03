@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Single Day', cursive;                                                                                     
+}
+
+body{
+    width: 100%;
+    background-color: #476E8C;
+}
+
+.main {
+    height: 100vh;
+    padding: 10vh 0;
+    margin-left: 10%;
+}
+
+.main > div {
+    height: 40vh;
+    width: 50%;
+    margin: 0 20%;
+}
+
+.img-container{
+    background-color: white;
+    position: relative;
+}
+
+.game-desc {
+    background-color: #FFE465;
+    position: relative;
+}
+
+.img-container img{
+    width: 60%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game-desc div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 5%;
+}
+
+.game-desc p{
+    font-family: 'Single Day', cursive;
+    color: #3A6383;
+    font-size: 30px;
+    text-align: center;
+}
+
+#button{
+    background-color:#3A6383 ;
+    color: #ffffff ;
+    padding: 8px;
+    margin-left:330px;
+    margin-top:20px;
+    border-style:solid ;
+    border-radius: 8px;
+    border-color: #3a6383b4;
+    font-size: 25px;
+    font-family: 'Single Day', cursive;
+    width: 220px;
+    height: 50px;
+ }
+
+#button:hover{
+  background-color: #FFE465;
+  border-color: #3A6383;
+  color: #3A6383;
+  cursor: pointer;
+}
+
+
+input{
+      margin-top: 90px;
+      padding: 12px 20px;
+      height: 60px;
+      border-radius: 5px;
+
+     
+      font-style: italic;
+      font-size: 15px;
+      color: #3A6383;
+      border: 3px solid #3a6383a2;
+      outline: #3A6383;
+}

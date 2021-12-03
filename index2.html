@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+   <div class="main">
+    
+        <div class="img-container">
+           <img src="image.png">
+        </div>
+        
+        <div class="game-desc">
+           <p id="num"></p>
+            <div>
+                <p id=message></p>
+               <input type="texte" id="guess_input" placeholder="Enter a number.">
+                <input type="button" id="button" value="GO...!" onclick="guess()">
+            </div>
+        </div>
+   </div>
+
+   <script>
+       var input_btn = document.getElementById("guess_input");
+       var message = document.getElementById("message");
+       var rand = 20;
+       var lives = document.getElementById('lives');
+       var count = 9 ;
+       var go = document.getElementById('button');
+       var num = document.getElementById('num');
+       num.textContent =10;
+       
+       function guess(){
+           if(count ==9 || count>=0){
+               num.textContent =`${count--}`
+           }
+
+       if(input_btn.value == rand){
+           message.innerHTML="Yeeeh,you are genius ";
+           go.style.display ="none";
+
+       }
+       else if(input_btn.value>rand){
+           message.innerHTML ="Oups, the number is too big :( ";
+           tries--;
+           lives.innerHTML = tries;
+       }
+       else{
+           message.innerHTML ="Oups, the number is too small :( ";
+           tries--;
+           lives.innerHTML = tries;
+       }
+    }
+    
+   </script>
+   
+    
+</body>
+</html>
